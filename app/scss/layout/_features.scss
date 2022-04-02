@@ -1,5 +1,31 @@
 .features {
   grid-column: center-start / center-end;
+   margin: 15rem 0;
 
-  margin: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  grid-column-gap: 6rem;
+  grid-row-gap: 2rem;
+  align-items: start;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  
+  &__icon {
+    grid-row: 1 / 3;
+    fill: var(--clr-primary);
+    width: 4.5rem;
+    height: 4.5rem;
+    transform: translateY(-.7rem);
+  }
+
+  &__text {
+    grid-column: 2 / -1;
+
+    font-size: 1.7rem;
+  }
 }
