@@ -12,32 +12,39 @@
 
   &__list {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 2rem;
   }
-.nav {
-  &__link:link,
-  &__link:visited {
-    display: block;
-    color: #fff;
+
+  .nav {
+
+    &__items {
+      flex: 0 1 19rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+      display: block;
+      color: #fff;
+      font-size: 1.4rem;
+      padding: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    &__link:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+  }
+
+  .copyright {
     font-size: 1.4rem;
-    padding: 1.5rem;
-    text-transform: uppercase;
+    color: var(--clr-grey-light-2);
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 70%;
   }
-
-  &__link:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-  }
 }
-
-.copyright {
-  font-size: 1.4rem;
-  color: var(--clr-grey-light-2);
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  width: 70%;
-}
-}
-
