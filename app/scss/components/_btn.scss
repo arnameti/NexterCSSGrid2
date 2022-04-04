@@ -1,0 +1,15 @@
+.btn {
+  font-family: var(--font-display);
+  border: none;
+  border-radius: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  background-color: var(--clr-primary);
+  color: #fff;
+
+  &:link,
+  &:hover {
+    background-color:var(--clr-primary-dark);
+  }
+}
