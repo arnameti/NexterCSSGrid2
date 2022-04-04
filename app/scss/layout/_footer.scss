@@ -1,4 +1,43 @@
 .footer {
   background-color: var(--clr-secondary);
   grid-column: full-start / full-end;
-} 
+  color: #fff;
+  padding: 8rem;
+  font-size: 1.6rem;
+  font-family: var(--font-display);
+
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+.nav {
+  &__link:link,
+  &__link:visited {
+    display: block;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  &__link:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: var(--clr-grey-light-2);
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 70%;
+}
+}
+
